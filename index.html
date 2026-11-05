@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="checkout-container">
+
+        <h1>Clothing Store Checkout</h1>
+
+        <div class="checkout-layout">
+
+            <div class="right-column">
+
+                <section>
+                    <h2>Order Summary</h2>
+
+                    <div id="orderItems"></div>
+
+                    <p>Total Items: <span id="totalItems">0</span></p>
+
+                    <p>Subtotal: $<span id="subtotal">0.00</span></p>
+                </section>
+
+                <section>
+                    <h2>Price Breakdown</h2>
+
+                    <p>Subtotal: $<span id="finalSubtotal">0.00</span></p>
+
+                    <p>Discount: $<span id="discount">0.00</span></p>
+
+                    <p>Delivery Fee: $<span id="deliveryFee">5.00</span></p>
+
+                    <h3>Final Total: $<span id="finalTotal">0.00</span></h3>
+                </section>
+
+            </div>
+
+            <div class="left-column">
+
+                <section>
+                    <h2>Customer Information</h2>
+
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" required>
+
+                    <label for="customerEmail">Email</label>
+                    <input type="email" id="customerEmail" required>
+
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" required>
+
+                    <label for="customerAddress">Delivery Address</label>
+                    <input type="text" id="customerAddress" required>
+                </section>
+
+                <section>
+                    <h2>Delivery Options</h2>
+
+                    <label>
+                        <input type="radio" name="delivery" value="5" checked>
+                        Standard Delivery - $5
+                    </label>
+
+                    <label>
+                        <input type="radio" name="delivery" value="10">
+                        Express Delivery - $10
+                    </label>
+                </section>
+
+                <section>
+                    <h2>Payment Method</h2>
+
+                    <label>
+                        <input type="radio" name="payment" value="cash" checked>
+                        Cash on Delivery
+                    </label>
+
+                    <label>
+                        <input type="radio" name="payment" value="card">
+                        Credit/Debit Card
+                    </label>
+
+                    <p id="paymentMessage"></p>
+                </section>
+
+                <section>
+                    <h2>Promo Code</h2>
+
+                    <label for="promoCode">Enter Promo Code</label>
+
+                    <input
+                        type="text"
+                        id="promoCode"
+                        placeholder="Enter your code"
+                    >
+
+                    <button type="button" id="applyPromo">
+                        Apply Code
+                    </button>
+
+                    <p id="promoMessage"></p>
+                </section>
+
+                <section>
+                    <h2>Complete Your Order</h2>
+
+                    <button type="button" id="placeOrder">
+                        Place Order
+                    </button>
+
+                    <div id="orderConfirmation"></div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

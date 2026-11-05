@@ -1,0 +1,151 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f6ff;
+    margin: 0;
+    padding: 20px;
+}
+
+.checkout-container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    color: #56318f;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.checkout-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.left-column {
+    width: 40%;
+}
+
+.right-column {
+    width: 60%;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd4ff;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #7045b5;
+    font-size: 19px;
+}
+
+p {
+    color: #444;
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cfc2f5;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input:focus {
+    border-color: #7045b5;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+#orderItems p {
+    background-color: #f8f6ff;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    color: #39216b;
+}
+
+#totalItems,
+#subtotal,
+#finalSubtotal,
+#deliveryFee,
+#discount,
+#finalTotal {
+    color: #7045b5;
+    font-weight: bold;
+}
+
+h3 {
+    color: #56318f;
+    font-size: 22px;
+}
+
+button {
+    background-color: #7045b5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #56318f;
+}
+
+#placeOrder {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+}
+
+#orderConfirmation {
+    background-color: #f0fff4;
+    color:palevioletred; 
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .checkout-container {
+        padding: 15px;
+    }
+
+    .checkout-layout {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+}
